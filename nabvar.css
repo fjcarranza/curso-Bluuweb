@@ -1,0 +1,52 @@
+.nav-enlace
+{
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    color: blue;
+    padding:10px 30px;
+    text-decoration: none;
+
+}
+.nav-enlace:hover
+{
+    background: cornflowerblue;
+    color: azure;
+}
+nav
+{
+    background: red;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-boton{
+    background:rgb(255, 255, 255);
+    color: blue;
+    padding: 10px;
+    margin: 3px;
+    border: 0px solid rgb(219, 163, 163);
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color:red;
+        flex-direction:column;
+        padding: 10px;
+    }
+    .nav-enlace{
+        margin: 2px;
+    }
+    .nav-boton{
+        display: inline-block;
+        color: blue;
+        background:rgb(255, 255, 255);
+    }
+    .desaparece{
+        display:  none;
+    }
+    .nav-boton:hover{
+         background: cornflowerblue;
+         color:azure;
+
+    }
+}
