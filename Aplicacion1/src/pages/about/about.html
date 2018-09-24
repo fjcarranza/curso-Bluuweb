@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--lista-->
+  <ion-card>
+    <ion-card-header>
+      Explore Nearby
+    </ion-card-header>
+  
+    <ion-list>
+      <button ion-item *ngFor="let item of lista">
+        <ion-icon name="cart" item-start [ngStyle]="{'color': item.color}"></ion-icon>
+        l{{item.titulo}}
+      </button>
+  
+      
+  
+    </ion-list>
+  </ion-card>
+  <!--lista-->
+</ion-content>
